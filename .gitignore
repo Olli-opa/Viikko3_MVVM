@@ -1,15 +1,65 @@
+# =========================
+# Android Studio / IntelliJ
+# =========================
+.idea/
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+*.ipr
+*.iws
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+**/build/
+
+# =========================
+# Local config
+# =========================
 local.properties
+
+# =========================
+# Keystore files (ÄLÄ KOSKAAN GITHUBIIN)
+# =========================
+*.jks
+*.keystore
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Android
+# =========================
+captures/
+.externalNativeBuild/
+.cxx/
+
+# =========================
+# Kotlin
+# =========================
+*.class
+.kotlin/
+
+# =========================
+# Compose tooling
+# =========================
+ui-tooling-preview.json
+
+# =========================
+# Generated files
+# =========================
+apk/
+*.apk
+*.aab
+
+# Android build outputs
+**/release/
+**/debug/
