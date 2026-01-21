@@ -21,3 +21,4 @@ fun filterByDone(list: List<Task>, done: Boolean): List<Task> {
 fun sortByDueDate(list: List<Task>): List<Task> {
     return list.sortedBy { it.dueDate }
 }
+// Käytetty viikkotehtävä 1:ssä
