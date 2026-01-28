@@ -4,8 +4,8 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
-import com.example.viikkotehtava1.domain.Task
-import com.example.viikkotehtava1.domain.mockTasks
+import com.example.viikkotehtava1.model.Task
+import com.example.viikkotehtava1.model.mockTasks
 
 class TaskViewModel : ViewModel() {
 

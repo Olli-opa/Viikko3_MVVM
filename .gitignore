@@ -10,11 +10,10 @@
 # Gradle
 # =========================
 .gradle/
-build/
 **/build/
 
 # =========================
-# Local config
+# Local config (machine specific)
 # =========================
 local.properties
 
@@ -43,7 +42,7 @@ captures/
 .cxx/
 
 # =========================
-# Kotlin
+# Kotlin / Java
 # =========================
 *.class
 .kotlin/
@@ -54,12 +53,12 @@ captures/
 ui-tooling-preview.json
 
 # =========================
-# Generated files
+# Generated APK / AAB (ei versionhallintaan)
 # =========================
-apk/
 *.apk
 *.aab
 
-# Android build outputs
-**/release/
-**/debug/
+# =========================
+# Emulator / Device
+# =========================
+*.hprof
