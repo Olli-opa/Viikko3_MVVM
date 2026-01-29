@@ -97,10 +97,12 @@ fun HomeScreen(modifier: Modifier = Modifier, viewModel: TaskViewModel = viewMod
                         onCheckedChange = { viewModel.toggleDone(task.id) }
                     )
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text(
-                        text = task.title,
-                        modifier = Modifier.weight(1f)
-                    )
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(task.title, style = MaterialTheme.typography.bodyLarge)
+                        if (task.description.isNotBlank()) {
+                            Text(task.description, style = MaterialTheme.typography.bodySmall)
+                        }
+                    }
                     Button(onClick = { viewModel.removeTask(task.id) }) {
                         Text("Remove")
                     }
